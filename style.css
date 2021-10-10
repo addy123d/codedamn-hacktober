@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    background:#000000;
+    color: #ffffff;
+
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    line-height: 26.4px;
+}
+
+.landing{
+    background: linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,0.9),rgba(0,0,0,0.9),rgba(0,0,0,0.7)), url("images/bg.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+.cta,.socials{
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+
+
+   margin-left: 3%;
+   margin-right: 60%;
+
+   position: absolute;
+   top: 35%;
+}
+
+.socials{
+    
+    opacity: .3;
+    top: 85%;
+}
+
+.cta .title h1{
+    font-size: 52px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 65px;
+}
+
+.cta .description p{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 4%;
+    font-size: 19px;
+    opacity: .6;
+}
+
+.cta .form{
+    margin-top: 6%;
+
+    display: flex;
+}
+
+.cta .form > div{
+    padding-right: 20px;
+}
+
+input{
+    padding: .8em 1.7em;
+    background: transparent;
+    color: #ffffff;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+
+    border: 1px solid #727272;
+}
+
+input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+button{
+    padding: .8em 1em;
+    background: #1cb495;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.icons{
+    display: flex;
+}
+
+.icons > div{
+    padding-right: 20px;
+}
+
+/* .icons > div i{
+    font-size: 1rem;
+} */
+
+.credits{
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media all and (max-width: 930px){
+    .cta .title,.cta .description{
+        display: none;
+    }
+
+    .cta{
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin-left: 3%;
+        margin-right: 5%;
+    }
+
+    .socials{
+        margin-left: 3%;
+        margin-right: 5%;
+    }
+
+    .cta .form{
+        flex-direction: column;
+    }
+
+    .cta .form> div{
+        margin-top: 5%;
+    }
+    
+    button{
+        width: 100%;
+    }
+
+    .credits{
+        font-size: .7rem;
+        letter-spacing: 1px;
+    }
+}
